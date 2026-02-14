@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About | Mpolokeng Kolo</title>
+    <link rel="stylesheet" href="astyle.css">
+</head>
+<body>
+
+<header>
+    <h1>About Mpolokeng Kolo’s Valentine’s day with me</h1>
+    <nav>
+        <a href="favorite-foods.html">food</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About US</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Our Love Story Celebration</h2>
+    <p>
+        Just like any love story, ours began on an ordinary Monday afternoon I remember it clearly because it was presentation day.
+         A friend nudged me to take pictures with his girlfriend since she was with her friends,
+          so I joined him; in the soft, unexpected light of that moment our first photograph was taken.
+           We were quietly cruising through the day, two hearts finding an easy rhythm,
+            and nothing and no one will ever change what began there..
+    </p>
+</div>
+
+
+ <div class="gallery-section">
+        <h2>Memories of the first Pictures</h2>
+        <div class="image-slots">
+            <div class="slot">
+                <img src="WhatsApp Image 2026-02-14 at 01.51.23.jpeg" alt="Couple Celebration">
+            </div>
+            <div class="slot">
+                <img src="WhatsApp Image 2026-02-14 at 01.51.25.jpeg" alt="Romantic Dinner">
+            </div>
+        </div>
+
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+
+  // Random horizontal position
+  heart.style.left = Math.random() * window.innerWidth + "px";
+
+  // Random size
+  const size = Math.random() * 20 + 10; // between 10px and 30px
+  heart.style.width = size + "px";
+  heart.style.height = size + "px";
+
+  // Random color (black, red, pink)
+  const colors = ["black", "red", "pink"];
+  heart.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+  // Random animation duration
+  const duration = Math.random() * 5 + 5; // between 5s and 10s
+  heart.style.animationDuration = duration + "s";
+
+  document.body.appendChild(heart);
+
+  // Remove heart after animation ends
+  setTimeout(() => {
+    heart.remove();
+  }, duration * 1000);
+}
+
+// Generate hearts continuously
+setInterval(createHeart, 500); // every 0.5 seconds
+</script>
+<footer>
+    © 2026 Mpolokeng Kolo Valentine with me
+</footer>
+</body>
+</html>
